@@ -1,0 +1,31 @@
+{
+  "name": "medium-article",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "eslint src/**/*.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "eslint --fix",
+        "git add"
+      ]
+    }
+  },
+  "devDependencies": {
+    "eslint": "4.12.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-prettier-standard": "^1.0.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
+    "prettier": "1.8.2",
+    "prettier-standard": "^7.0.3"
+  }
+}
